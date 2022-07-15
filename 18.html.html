@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sample">
+        Hello <span>world</span>
+    </h1>
+    <h1 class="result"></h1>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+
+
+        // console.log印出  $(".sample").text()回傳值得到執行結果
+        console.log("sample text:" , $(".sample").text())
+        
+        // 1.拿 .sample的html()  存在h1Html變數
+        const h1Html = $(".sample").html();
+
+        // 2. 拿.sample的變數h1Html 改.result的html()
+        $(".result").html(h1Html);
+
+
+        // 1.拿 .samole的text() 存在h1Text變數 
+        const h1Text = $(".sample").text();
+
+        // 2. 拿.samole的h1Text變數  改.result的text()
+        $(".result").text(h1Text);
+        
+
+
+
+        // console.log("sample text:" , $(".sample").text());
+        // console.log("h1Text" , h1Text);
+
+    </script>
+</body>
+</html>

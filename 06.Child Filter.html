@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* div{
+            background-color: cornflowerblue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="comtainer">
+        <div class="row">
+            <span>span1</span>
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+            <span>span2</span>
+            <div class="col">col4</div>
+            <div class="col">col5</div>
+            <div class="col">col6</div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col">row2 col1</div>
+            <div class="col">row2 col2</div>
+            <div class="col">row2 col3</div>
+            <span>span1</span>
+            <div class="col">row2 col4</div>
+            <span>span2</span>
+            <div class="col">row2 col5</div>
+            <div class="col">row2 col6</div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col">row3 col1</div>
+            <div class="col">row3 col2</div>
+            <div class="col">row3 col3</div>
+            <span>span1</span>
+            <span>span2</span>
+            <div class="col">row3 col4</div>
+            <div class="col">row3 col5</div>
+            <div class="col">row3 col6</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(".col:nth-child(2)").css("background" , "lightblue");
+        // nth-child(從第一個開始算起)看html家族小孩裡面的架構
+
+        $(".col:eq(9)").css("background", "orange");
+        // eq()不管架構(從第0個該使算起)全部的col的第4個
+
+        $(".col:last-child").css("background" , "lightgreen");
+        // row家族裡面的第一個col的小孩
+
+        $(".col:first-child").css("background" , "cornflowerblue");
+        //第一個row裡面的第一個小孩並不是col(第一個小孩是span)所以選擇不到
+
+        $("span:nth-of-type(2)").css("background" , "green")
+    </script>
+</body>
+</html>

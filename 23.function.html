@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        // .function()匿名函式如果沒有命名 外面要用一個()包起來 後面要再給一個() 
+        (function(){
+            console.log("hi");
+            console.log("1+1" , 1+1);
+        })()
+
+
+
+        // 常態性的功能，我們會寫成一個有名子的函式
+        // console.log("") 在function是給一個定義
+        // .function SayHi-自訂給function一個名字 {console.log("hi")}執行 
+        function SayHi(){
+            console.log("hi");
+        }
+        // SayHi(); 執行回傳結果
+        SayHi();
+        SayHi();
+
+
+
+        // 函式可以帶入參數使用
+        function add(x ,y){
+            console.log(x+y);
+        }
+        add( 3, 5 );
+        add( 9, 3);
+        // add( 3, 5 ); 回傳add(x ,y) 帶入console.log(x+y) 得到執行結果 執行結果回傳
+
+        
+
+    </script>
+</body>
+</html>

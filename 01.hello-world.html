@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $("h1") .css( "color" , "orange"  );
+        })
+    </script> -->
+
+</head>
+<body>
+    
+    <h1>Hello World</h1>
+
+    <h2 id="Mybox" class="box">box</h2>
+
+    <h3>box</h3>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+            $("h1") .css( "color" , "orange"  )
+            $(" #Mybox ") .css("color" , "blue" )
+            $("h2 , h1" ) .css( "color" , "green")
+            $("h2 , #Mybox").text('it\'s mondy' )
+            $("h3").text("it's mondy").css("color" , "orange")
+
+            var weekday="wed"      
+                weekday="olala"
+            // // es5
+            // $("h1").text("it\'s "+ weekday + " today")
+
+            // es6
+            $("h1").text(`it's ${weekday} today`)
+    </script>
+</body>
+</html>
